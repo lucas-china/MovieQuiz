@@ -11,11 +11,11 @@ import UIKit
 class GameOverViewController: UIViewController {
 
     @IBOutlet weak var lbScore: UILabel!
+    var score: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        lbScore.text = "\(score)"
     }
     
     @IBAction func playAgain(_ sender: UIButton) {
